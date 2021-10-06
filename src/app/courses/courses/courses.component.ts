@@ -1,5 +1,6 @@
 import { Course } from './../model/course';
 import { Component, OnInit } from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-courses',
