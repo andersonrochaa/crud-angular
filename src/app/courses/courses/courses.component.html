@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-toolbar color="primary"> Cursos Disponíveis </mat-toolbar>
+  <mat-toolbar color="primary"> Cursos Disponíveis!</mat-toolbar>
   <div *ngIf="courses$ | async as courses; else loading">
     <table mat-table [dataSource]="courses" class="mat-elevation-z8">
       <!--- Note that these columns can be defined in any order.
