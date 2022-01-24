@@ -9,7 +9,7 @@ import { take } from 'rxjs/operators';
 })
 export class CoursesService {
 
-  private readonly API = '/assets/dscourses.json'
+  private readonly API = 'api/courses'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -17,7 +17,7 @@ export class CoursesService {
     return this.httpClient.get<Course[]>(this.API)
     .pipe(
       first(),
-      delay(2000),
+      delay(200),
       tap(courses => console.log(courses))
     );
   }
